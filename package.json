@@ -1,0 +1,20 @@
+{
+  "name": "projetofinaltestedesistema",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^9.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.7",
+    "selenium-webdriver": "^4.0.0-beta.3"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "test": "node src/seleniumTest.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

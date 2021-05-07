@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel='stylesheet' href='css/common.css'>
+
+    <style>
+        .user-section {
+            width: 100%;
+            height: 100%;
+           
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .user-section h1 {
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        .user-section li {
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+
+            border-radius: 5px;
+            background-color: #7a41b95e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section class='user-section'>
+        <h1>Usuários</h1>
+
+        <% if (users.length > 0) { %>
+            <ul>
+                <% users.forEach((user, index) => { %>
+                    <li itemEmail="<%= user.email %>" itemid="<%= index %>"><%= user %></li>
+                <% }); %>
+                </ul>
+        <% } else { %>
+            <h2>Não existem usuários</h2>
+        <% } %>
+        
+    </section>
+</body>
+</html>

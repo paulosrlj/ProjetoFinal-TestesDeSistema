@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel='stylesheet' href='css/common.css'>
+    <link rel='stylesheet' href='css/register.css'>
+</head>
+<body>
+    <section class="login-cover"></section>
+
+    <section class="login-field">
+      <form class="login-form" method="POST" action='/home'>
+        <h1>Registre-se</h1>
+
+        <input type="text" name='user' placeholder="Matrícula" class="login-user" />
+        <input type="email" name='email' placeholder="Email" class="login-user login-email"/>
+        <input type="password" name='password' placeholder="Senha" class="login-pass" />
+
+        <button type="submit" class="login-btn">Criar</button>
+      </form>
+    </section>
+</body>
+</html>
